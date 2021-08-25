@@ -1,0 +1,20 @@
+<div *ngIf="!mostrarLogin">
+    <div id="inicio" >
+
+        </div>
+        <div id="container">
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="name">
+                <label for="username">Contraseña:</label>
+                <input type="password">
+                <div id="lower">
+                    <input type="submit" value="Acceder" (click)="activarDatos()">
+                </div>
+            </form>       
+        </div>
+        
+    </div>
+    <div *ngIf="mostrarLogin">
+        <app-lista-categoria></app-lista-categoria>   
+    </div>
